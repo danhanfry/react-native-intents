@@ -1,0 +1,22 @@
+{
+  "name": "react-native-intents",
+  "version": "0.1.0",
+  "description": "Handles intents independently of the platform (iOS / android).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.13"
+  },
+  "keywords": [
+    "react-native",
+    "intent",
+    "openURL",
+    "iOS",
+    "android"
+  ],
+  "author": "ticketea.com",
+  "repository": "https://github.com/ticketea/react-native-intents",
+  "license": "MIT"
+}
