@@ -12,4 +12,22 @@ import com.facebook.react.bridge.Callback;
 
 public class UniversalIntent extends ReactContextBaseJavaModule {
 
+  ReactContext reactContext;
+
+  public UniversalIntent(ReactApplicationContext reactContext) {
+    super(reactContext);
+    this.reactContext = reactContext;
+  }
+
+  @Override
+  public String getName() {
+    return "UniversalIntent";
+  }
+
+  @ReactMethod
+  public void openURL(String url) {
+    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    this.reactContext.startActivity(intent);
+  }
 }
