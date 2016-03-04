@@ -3,10 +3,6 @@
 This module tries to abstract open `intents` independently of the platform (iOS or Android).
 
 
-
-
-
-
 ## Use
 
 `React Native Intents` has a static method which receives a URL and open it in Safari (or other app using URL schemes) or default Android browser. You can see more info [after](#under-the-hood).

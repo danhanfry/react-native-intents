@@ -15,6 +15,10 @@ class UniversalIntent {
     }
   }
 
+	static backHome(url) {
+    AndroidIntent.backHome(url);
+  }
+
 }
 
 module.exports = UniversalIntent;
